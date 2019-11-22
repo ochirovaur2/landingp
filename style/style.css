@@ -106,13 +106,7 @@ nav .container  ul li{
 	align-items: center;
 	
 }
-.main #homeForTag {
-	position: absolute;
-	
-	top: -20px;
-	left: 0;
-	
-}
+
 .main h1 {
 	font-size: 4rem;
 	padding: 1rem 0;
@@ -136,10 +130,7 @@ nav .container  ul li{
 	text-align: center;
 	padding-bottom: 40px;
 }
-.whatWeDo #whatForTag{
-	position: relative;
-	top: -200px;
-}
+
 
 .whatWeDo .whatWeDo-container {
 	display: flex;
@@ -148,8 +139,9 @@ nav .container  ul li{
 }
 .whatWeDo .whatWeDo-container .features{
 	display: flex;
-	justify-content: center;
-	padding: 0 20px;
+	flex-direction: column;
+	
+	margin:  0 20px;
 
 } 
 .features i{
@@ -232,9 +224,10 @@ nav .container  ul li{
 }
 .contact .contact-form .btn {
 	width: 80%;
+	margin-top: 10px;
 }
 .contact #map {
-	flex: 2;
+	flex: 1;
 }
 
 /* footer */
@@ -242,4 +235,34 @@ nav .container  ul li{
 	display: flex;
 	justify-content: center;
 
+}
+
+
+@media(max-width: 768px) {
+	nav .container {
+		flex-direction: column;
+		padding-bottom: 15px;
+
+		overflow: hidden;
+
+	}
+	.main  {
+		text-align: center;
+	}
+	.whatWeDo .whatWeDo-container {
+	
+	flex-direction: column;
+
+	}
+	.whoWeAre .img{
+	display:  none;
+
+	}
+	.contact {
+	flex-direction: column;
+
+	}
+	.contact #map{
+		display: none;
+	}
 }
