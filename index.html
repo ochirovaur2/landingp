@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<script type="text/javascript" src="jquery.min.js"></script>
 </head>
-<body>
-	<nav >
+<body id="home">
+	<nav id="navbar">
 		<div class=" container"> 
 				
 			<h1 class="l-heading">
@@ -30,8 +30,8 @@
 	</section>
 	<div class="clr"></div>
 
-	<section class="whatWeDo" >
-		<a href="" name="what" id="whatForTag"></a>
+	<section class="whatWeDo" id="what">
+		
 		<div class="container">
 			<h2 class="l-heading py-2"><span class="text-primary">What</span> We Do</h2>
 			<div class="whatWeDo-container">
@@ -72,8 +72,8 @@
 		</div>
 	</section>
 
-	<section class="whoWeAre">
-			<a href="" name="who" id="whoForTag"></a>
+	<section class="whoWeAre" id="who">
+			
 			<div class="img">
 			
 			</div>
@@ -105,8 +105,8 @@
 		</div>
 	</section>
 
-	<section class="contact">
-		<a href="" name="contact" ></a>
+	<section class="contact" id="contact">
+	
 		<div class="contact-form">
 			<h2 class="l-heading py-2">Contact Us</h2>
 			<p class="n-fs">Please use the form below to contact us</p>
@@ -142,6 +142,10 @@
 	
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=618a6d9b-3cde-4cfd-a328-0d3adbecbb26&lang=ru_RU" type="text/javascript">
     </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+
     <script type="text/javascript">
         ymaps.ready(init);
         function init(){
@@ -150,6 +154,20 @@
                 zoom: 7
             });
         }
+        $('#navbar a').on('click', function(e){
+        	
+        	if(this.hash !== "") {
+        		
+        		e.preventDefault();
+        		
+        		const hash = this.hash;
+        		$('html, body').animate(
+        			{
+        				scrollTop: $(hash).offset().top - 100
+        			}, 700
+        		);
+        	}
+        });
     </script>
 </body>
 </html>
