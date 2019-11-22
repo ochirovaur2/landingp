@@ -1,0 +1,245 @@
+/* Reset */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  	color: #fff;
+  	background: #2E2D2E;
+
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  
+}
+.text-primary {
+  color: #89BB4F;
+}
+.l-heading {
+  font-size: 3rem;
+}
+.n-fs {
+	font-size: 2rem;
+}
+.bold{
+	font-weight: bold;
+}
+/* Padding */
+.py-1 { padding: 1rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+.btn {
+	display: inline-block;
+	font-size: 1.6rem;
+	color: #fff;
+	background: #8DD351;
+	padding: 0.8rem 2rem;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.btn-primary {
+	background: #2E2D2E !important;
+}
+.clr{
+	clear: both;
+}
+/* Navbar */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	background: rgba(46, 45, 46, 0.90);
+	height: 10vh;
+}
+nav .container {
+	
+	display: flex;
+	justify-content: space-between;
+	
+	align-items: center;
+	height: 10vh;
+
+}
+
+nav .container ul {
+	display: flex;
+
+}
+nav .container h1 {
+	cursor: pointer;
+}
+nav .container  ul li{
+	list-style: none;
+	padding:  0 1rem;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+/* main */
+
+.main {
+	margin-top: 10vh;
+	background: url("../image_resources/showcase.jpg") center center/cover, rgba(0, 0, 0, 0.3) ;
+	background-repeat: no-repeat;
+	background-blend-mode: color;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.main #homeForTag {
+	position: absolute;
+	
+	top: -20px;
+	left: 0;
+	
+}
+.main h1 {
+	font-size: 4rem;
+	padding: 1rem 0;
+}
+.main p{
+	font-size: 1.8rem;
+	padding: 1rem 0;
+
+}
+.main a{
+	margin-top: 2rem;
+}
+
+/* What We Do*/
+
+.whatWeDo{
+	display: flex;
+	background: #fFF;
+	height: 100%;
+	color: black;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.whatWeDo #whatForTag{
+	position: relative;
+	top: -200px;
+}
+
+.whatWeDo .whatWeDo-container {
+	display: flex;
+	flex-direction: row;
+
+}
+.whatWeDo .whatWeDo-container .features{
+	display: flex;
+	justify-content: center;
+	padding: 0 20px;
+
+} 
+.features i{
+	
+	font-size: 4rem;
+	color: white;
+	background: #89BB4F;
+	padding: 10px;
+	border-radius: 50%;
+}
+.features .box {
+	padding: 0 10px;
+	flex: 1;
+}
+/* whoWeAre */
+.whoWeAre{
+	display:  flex;
+
+}
+.whoWeAre #whoForTag{
+	position: relative;
+	top: -75px;
+}
+.whoWeAre .img{
+	flex: 1;
+	background: url("../image_resources/people.jpg") no-repeat center center/cover;
+}
+.whoWeAre .ourTeam{
+	padding: 30px;
+	flex: 1;
+}
+.whoWeAre .ourTeam p {
+	margin-bottom: 20px;
+}
+/* clients */
+.clients{
+	color: black;
+	background: #fff;
+	text-align:center;
+	padding-bottom: 40px;
+
+}
+.clients .container .logosOfClients{
+	display: flex;
+	justify-content: space-around;
+
+}
+.clients .container .logosOfClients img{
+	width: 8rem;
+	height: 100%;
+}
+
+/* contact */
+.contact {
+	display: flex;
+
+	
+	
+}
+.contact .contact-form{
+	flex: 1;
+	display: flex;
+	background: #8DD351;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.contact .contact-form .form-group:first-child {
+	padding-top: 20px;
+}
+.contact .contact-form p label {
+	font-size: 15px;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+	width: 100%;
+	line-height: 25px;
+	
+
+}
+.contact .contact-form .btn {
+	width: 80%;
+}
+.contact #map {
+	flex: 2;
+}
+
+/* footer */
+#main-footer {
+	display: flex;
+	justify-content: center;
+
+}

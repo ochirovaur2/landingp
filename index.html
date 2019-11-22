@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edge Leader</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<nav >
+		<div class=" container"> 
+				
+			<h1 class="l-heading">
+				<span class="text-primary">Edge</span>Leader
+			</h1>
+			<ul >	
+				<li><a href="#home">Home</a></li>
+				<li><a href="#what">What</a></li>
+				<li><a href="#who">Who</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="main" >
+		<a href="#" id="homeForTag" name="home"></a>
+		<h1>The <span class="text-primary">Sky</span> Is The Limit</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, beatae.</p>
+		<a href="#" class="btn">Read more</a>
+	</section>
+	<div class="clr"></div>
+
+	<section class="whatWeDo" >
+		<a href="" name="what" id="whatForTag"></a>
+		<div class="container">
+			<h2 class="l-heading py-2"><span class="text-primary">What</span> We Do</h2>
+			<div class="whatWeDo-container">
+				<div class="features py-1">
+					<i class="fas fa-book-open"></i>
+					<div class="box">
+						<h3>Investments</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eligendi architecto repudiandae neque mollitia id ipsum quae, officia, officiis cumque?
+						</p>
+					</div>
+					
+				</div>
+				<div class="features py-1">
+					<i class="fas fa-book-open"></i>
+					<div class="box">
+						<h3>Investments</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eligendi architecto repudiandae neque mollitia id ipsum quae, officia, officiis cumque?
+						</p>
+					</div>
+					
+				</div>
+				<div class="features py-1">
+					<div>
+						<i class="fas fa-book-open"></i>
+					</div>
+					<div class="box">
+						<h3>Investments</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eligendi architecto repudiandae neque mollitia id ipsum quae, officia, officiis cumque?
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="whoWeAre">
+			<a href="" name="who" id="whoForTag"></a>
+			<div class="img">
+			
+			</div>
+		
+		
+		
+		<div class="ourTeam">
+			<h2 class="l-heading py-2"><span class="text-primary">Who</span> we are</h2>
+			<p class="n-fs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nostrum facere corporis atque accusamus et? Placeat possimus numquam exercitationem consectetur!</p>
+			<p class="n-fs bold">Our team: </p>
+			<p class="n-fs">Mark Smith: CEO</p>
+			<p class="n-fs">John Corbit: CFO</p>
+			<p class="n-fs">Shanon Trump: Lead Accountant</p>
+			<p class="n-fs">Janet Turner: Investment manager</p>
+			<p class="n-fs">Kers Jackson: Senior Accountant</p>
+		</div>
+	</section>
+
+	<section class="clients" >
+		<div class="container">
+			<h2 class="l-heading py-2">Our <span class="text-primary">Clients</span></h2>
+			<div class="logosOfClients">
+				<img src="image_resources/logos/logo1.png" alt="">
+				<img src="image_resources/logos/logo2.png" alt="">
+				<img src="image_resources/logos/logo3.png" alt="">
+				<img src="image_resources/logos/logo4.png" alt="">
+				<img src="image_resources/logos/logo5.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<a href="" name="contact" ></a>
+		<div class="contact-form">
+			<h2 class="l-heading py-2">Contact Us</h2>
+			<p class="n-fs">Please use the form below to contact us</p>
+			<form>
+				<div class="form-group">
+					<p><label for="name">Name</label></p>
+					<input type="name" name="name" id="name"> 
+				</div>
+				<div class="form-group">
+					<p><label for="email">Email</label></p>
+					<input type="email" name="email" id="email"> 
+				</div>
+				<div class="form-group">
+					<p><label for="phone">Phone number</label></p>
+					<input type="number" name="phone" id="phone"> 
+				</div>
+				<div class="form-group">
+					<p><label for="message">Message</label></p>
+					<textarea name="message" id="message">
+						
+					</textarea> 
+				</div>
+				<button type="submit" class="btn btn-primary">Send</button>
+			</form>
+		</div>
+		<div id="map">
+			
+		</div>
+	</section>
+	 <footer id="main-footer" class="n-fs py-2">
+	    <p>Edge Leader &copy; 2019, All RIghts Reserved</p>
+	  </footer>
+	
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=618a6d9b-3cde-4cfd-a328-0d3adbecbb26&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            });
+        }
+    </script>
+</body>
+</html>
