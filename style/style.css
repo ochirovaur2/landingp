@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 html{
-	font-size: 62.5%;
+	font-size: 10px;
 }
 body{
 	
@@ -239,12 +239,15 @@ nav .container  ul li{
 
 
 @media(max-width: 768px) {
+	nav{
+		height: 12vh;
+	}
 	nav .container {
 		flex-direction: column;
 		padding-bottom: 15px;
-
+		height: 12vh;
 		overflow: hidden;
-
+		background: #2E2D2E;
 	}
 	.main  {
 		text-align: center;
@@ -257,6 +260,14 @@ nav .container  ul li{
 	.whoWeAre .img{
 	display:  none;
 
+	}
+	.clients .container .logosOfClients img{
+		width: 5rem;
+		height: 100%;
+	}
+
+	.clients .container .logosOfClients img:last-child{
+		display: none;
 	}
 	.contact {
 	flex-direction: column;
